@@ -25,4 +25,6 @@ dist-ssr
 *.sln
 *.sw?
 *.js
+*.md
 
+nuxt.config.ts
