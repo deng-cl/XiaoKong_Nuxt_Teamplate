@@ -31,38 +31,38 @@ export default defineNuxtPlugin(app => {
                 xkLight: {
                     colors: {
                         /* 主色 */
-                        primary: "#62d2a2",
+                        primary: "#2979FF",
                         /* 次色 */
-                        secondary: "#9df3c4",
+                        secondary: "#448AFF",
                         /* 强调色 */
-                        accent: "#1fab89",
+                        accent: "#2962FF",
                         /* 信息色 */
-                        info: "#d7fbe8",
+                        info: "#82B1FF",
                         /* 错误色 */
-                        error: "#FF5252",
+                        error: "#EF5350",
                         /* 成功色 */
-                        success: "#4CAF50",
+                        success: "#66BB6A",
                         /* 警告色 */
-                        warning: "#FFC107"
+                        warning: "#FFA726"
                     }
                 },
                 /* 自定义暗色主题 */
                 xkDark: {
                     colors: {
                         /* 主色 */
-                        primary: "#5e63b6",
+                        primary: "#D500F9",
                         /* 次色 */
-                        secondary: "#a393eb",
+                        secondary: "#E040FB",
                         /* 强调色 */
-                        accent: "#27296d",
+                        accent: "#AA00FF",
                         /* 信息色 */
-                        info: "#f5c7f7",
+                        info: "#EA80FC",
                         /* 错误色 */
-                        error: "#FF5252",
+                        error: "#EF5350",
                         /* 成功色 */
-                        success: "#4CAF50",
+                        success: "#66BB6A",
                         /* 警告色 */
-                        warning: "#FFC107"
+                        warning: "#FFA726"
                     }
                 }
                 // ...

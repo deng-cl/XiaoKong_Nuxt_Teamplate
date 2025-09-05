@@ -2,6 +2,10 @@
     "name": "nuxt-app",
     "type": "module",
     "private": true,
+    "author": {
+        "name": "XiaoKong",
+        "email": "2180733045@qq.com"
+    },
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",

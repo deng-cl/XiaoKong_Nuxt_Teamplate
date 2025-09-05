@@ -10,6 +10,6 @@
         <h1 :class="classAdaptor('text-red', 'text-green')">Index Page</h1>
         <v-btn color="red">Test</v-btn>
         <v-btn-primary>Test primary</v-btn-primary>
-        <v-btn @click="() => (themeName === 'xkLight' ? changeTheme('xkDark') : changeTheme('xkLight'))">Theme Toggle</v-btn>
+        <v-btn @click="() => (themeName === 'xkLight' ? changeTheme('xkDark') : changeTheme('xkLight'))" class="bg-secondary">Theme Toggle</v-btn>
     </div>
 </template>
