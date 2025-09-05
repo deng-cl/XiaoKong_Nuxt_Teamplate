@@ -11,5 +11,6 @@
         <v-btn color="red">Test</v-btn>
         <v-btn-primary>Test primary</v-btn-primary>
         <v-btn @click="() => (themeName === 'xkLight' ? changeTheme('xkDark') : changeTheme('xkLight'))" class="bg-secondary">Theme Toggle</v-btn>
+        <NuxtLink to="/about">关于</NuxtLink>
     </div>
 </template>

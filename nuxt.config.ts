@@ -5,7 +5,7 @@ import postcssPxToVwPlugin from "postcss-px-to-viewport-8-plugin";
 export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
     devtools: { enabled: true },
-
+    
     // modules config
     modules: [
         "@unocss/nuxt",
@@ -16,6 +16,17 @@ export default defineNuxtConfig({
             })
         },
     ],
+
+    // css
+    css: [
+        'vuetify/styles',
+        '@mdi/font/css/materialdesignicons.css'
+    ],
+
+    // app config
+    app: {
+        pageTransition: { name: 'page', mode: 'out-in' }
+    },
 
     // build config
     build: {
