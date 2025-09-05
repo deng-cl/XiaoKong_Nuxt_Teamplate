@@ -83,4 +83,15 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 - UI 库: `Vuetify`
 
+- 图标、字体: `为避免模板体积过大，暂不集成特定的图标或自定，需要用到时再进行集成`
 
+- i18n: `需要时再配置（注意点 - 配置国际化时判读时，可自行判断是否需要适配 Vuetify UI 库中的国际化 : https://vuetify.nodejs.cn/en/features/internationalization/）`
+
+- utils 方法
+    - ```ts
+        /* class 设置适配器 */
+        const classAdaptor = useSetClassAdaptor();
+
+        /* theme 主题切换 */
+        const { changeTheme, themeName } = useChangeTheme();
+      ```
