@@ -14,6 +14,18 @@ export default defineNuxtPlugin(app => {
         // 主题
         theme: {
             defaultTheme: "xkLight",
+            /**
+             * 自动生成对应颜色的 "变暗体" 与 "变亮体"
+             * - colors: [...colorsKey]
+             * - lighten: number → 生成变亮体数量 → using: `text-primary-[1,2,...] ...`
+             * - darken: number → 生成变暗体数量
+             */
+            variations: {
+                colors: ["primary", "secondary"],
+                lighten: 1,
+                darken: 2
+            },
+            /* 主题配置 */
             themes: {
                 /* 自定义亮色主题 */
                 xkLight: {
