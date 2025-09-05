@@ -1,3 +1,4 @@
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import postcssPxToVwPlugin from "postcss-px-to-viewport-8-plugin";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -5,12 +6,20 @@ export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
     devtools: { enabled: true },
 
-    modules: ["@unocss/nuxt"],
+    // modules config
+    modules: [
+        "@unocss/nuxt",
+        (_options, nuxt) => {
+            nuxt.hooks.hook('vite:extendConfig', (config) => {
+                // @ts-expect-error
+                config.plugins.push(vuetify({ autoImport: true }))
+            })
+        },
+    ],
 
-    $development: {
-        appConfig: {
-            BASE_URL: ""
-        }
+    // build config
+    build: {
+        transpile: ['vuetify'],
     },
 
     // vite config
@@ -34,6 +43,12 @@ export default defineNuxtConfig({
                     })
                 ]
             }
-        }
+        },
+
+        vue: {
+            template: {
+                transformAssetUrls,
+            },
+        },
     }
 });
